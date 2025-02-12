@@ -12,20 +12,8 @@ import "../settings"
 
 Page {
     id: root
-    signal back
     signal next
     background: null
-
-    header: NavigationBar2 {
-        id: navbar
-        leftItem: NavButton {
-            iconSource: "image://images/caret-left"
-            text: qsTr("Back")
-            onClicked: {
-                root.back()
-            }
-        }
-    }
 
     ColumnLayout {
         id: columnLayout
@@ -89,4 +77,4 @@ Page {
             }
         }
     }
-}
+} 
